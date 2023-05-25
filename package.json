@@ -1,12 +1,14 @@
 {
-  "name": "react-use-nested-object",
+  "name": "@forthtilliath/react-use-nested-object",
   "version": "0.1.0",
-  "description": "",
   "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "peerDependencies": {
+    "react": ">=16.8.3"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": "A custom React hook to manage deeply nested objects in state",
+  "author": "Forthtilliath",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.3"
+  }
 }

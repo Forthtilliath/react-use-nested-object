@@ -1,7 +1,7 @@
 {
   "name": "react-use-nested-object",
   "version": "0.1.0",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "peerDependencies": {
     "react": ">=16.8.3"
   },
@@ -10,5 +10,18 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forthtilliath/react-use-nested-object.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "customHook",
+    "useState",
+    "nested",
+    "object",
+    "update"
+  ]
 }

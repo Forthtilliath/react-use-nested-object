@@ -21,9 +21,7 @@ jobs:
         scope: '@forthtilliath'
 
     - name: Install dependencies
-      run: |
-        npm install -g pnpm
-        pnpm install --frozen-lockfile
+      run: npm ci
 
     - name: Bump version and create a release
       id: create_release

@@ -1,5 +1,5 @@
 {
-  "name": "@forthtilliath/react-use-nested-object",
+  "name": "react-use-nested-object",
   "version": "0.1.0",
   "main": "index.ts",
   "peerDependencies": {

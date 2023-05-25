@@ -12,7 +12,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+
+      - name: Set up Git user
+        run: |
+          git config --global user.email "forth.developer@gmail.com"
+          git config --global user.name "Forthtilliath"
+
       - name: Update version
         run: |
           COMMIT_MSG=$(git log -1 --pretty=%B)

@@ -27,7 +27,7 @@ jobs:
       id: create_release
       uses: release-drafter/release-drafter@v5
       env:
-        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       with:
         config-name: .github/release-drafter.yml

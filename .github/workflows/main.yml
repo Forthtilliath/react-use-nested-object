@@ -12,6 +12,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        
+      - name: Update version
+        run: |
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          if [[ $COMMIT_MSG =~ ^fix: ]]; then
+            npm version patch
+          elif [[ $COMMIT_MSG =~ ^!f: ]]; then
+            npm version major
+          else
+            npm version minor
+          fi
+
+      - name: Push changes
+        run: |
+          git push --follow-tags
 
       - name: Set up Node.js
         uses: actions/setup-node@v3

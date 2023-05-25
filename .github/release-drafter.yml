@@ -1,6 +1,10 @@
 name-template: "v$RESOLVED_VERSION"
 tag-template: "v$RESOLVED_VERSION"
 version-template: $MAJOR.$MINOR.$PATCH
+template: |
+  ## Changelog
+
+  $CHANGES
 categories:
   - title: "🚀 Features"
     labels:

@@ -32,6 +32,10 @@ jobs:
       with:
         config-name: .github/release-drafter.yml
 
+    - name: Set up npm authentication
+      run: npm config set '//registry.npmjs.org/:_authToken' "${{ env.NPM_TOKEN }}"
+
+
     - name: Publish to NPM
       run: npm publish --access=public
       env:
